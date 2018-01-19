@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.cpaine.menuexmples"
 
-    <item android:id="@+id/action_bar"
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/action_setting"
         android:title="Settings"
         android:orderInCategory="100"
         app:showAsAction="never"
+
         />
 
     <item android:id="@+id/exit_the_app"
         android:title="@string/options_exit_text"
-        app:showAsAction="never"
+        app:showAsAction="ifRoom|withText"
         android:orderInCategory="101"
+
         />
+    </group>
 </menu>
